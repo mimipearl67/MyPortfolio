@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* #050B18 navy blue
+#2563EB royal 
+#22D3EE cyan
+#1E3A5F blue grey 
+#F8FAFC
+#0B1628 navy*/
+
+body {
+    background-color: #050B18;
+}
+
+.nav-container {
+    background-color: #050B18;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.logo h4 {
+    /* margin-left: 30px; */
+    font-size: 3.5em;
+    color: #22D3EE;
+}
+
+.menu-list {
+    font-size: 25px;
+    /* margin-right: 190px; */
+    display: flex;
+    gap: 30px;
+}
+
+.menu-list a {
+    color: white;
+    /* transition: 1.5s; */
+}
+
+.menu-list a:hover {
+    text-decoration: 3px solid #22D3EE underline;
+}
+
+#resume {
+    background-color: #22D3EE;
+    padding: 1em;
+    color: #050B18;
+    font-size: 1.3em;
+    border-radius: 20px;
+
+}
+
+.fa-bars {
+    display: none;
+    color: #22D3EE;
+    font-size: 2em;
+}
+
+@media (max-width:768px) {
+    .nav-container {
+        padding: 20px;
+    }
+
+    .logo h4 {
+        font-size: 2.5em;
+    }
+
+    .fa-bars {
+        display: block;
+    }
+
+    .menu-list {
+        display: none;
+    }
+
+    #resume {
+        display: none;
+    }
+
+}
+
+/* hero section */
+.hero-section {
+    width: 70%;
+    height: 70vh;
+    border: 2px solid #22D3EE;
+    margin: 210px auto;
+    color: white;
+    text-align: center;
+    background-color: #050B18;
+    padding: 40px;
+}
+
+.hero-section h4 {
+
+    font-size: 7em;
+    font-weight: 400;
+}
+
+#name {
+    color: #22D3EE;
+    margin-bottom: 30px;
+}
+
+.hero-section p {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+
+
+.socials a {
+    font-size: 2em;
+    color: #22D3EE;
+}
+
+/* media query for hero section*/
+
+@media (max-width:768px) {
+    .hero-section h4 {
+        font-size: 4em;
+        font-weight: 600;
+    }
+
+    .hero-section p {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width:485px) {
+    .hero-section h4 {
+        font-size: 5em;
+        font-weight: 500;
+    }
+
+    .hero-section p {
+        font-size: 1.2em;
+    }
+
+    #name {
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width:375px) {
+    .hero-section {
+        width: 80%;
+        height: 60vh;
+        padding: 20px;
+    }
+
+    .hero-section h4 {
+        font-size: 3em;
+    }
+
+    .hero-section p {
+        font-size: 1.2em;
+    }
+
+    #name {
+        font-size: 2em;
+        margin-bottom: 40px;
+    }
+
+}
+
+/* About section  */
+.section2 h2 {
+    font-size: 4em;
+    color: white;
+    text-align: center;
+}
+
+.about-section {
+    border: 2px solid #22D3EE;
+    width: 90%;
+    height: 70vh;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 20px; */
+}
+
+.about-div {
+    border: 2px solid #22D3EE;
+    width: 50%;
+    height: 55vh;
+    text-align: center;
+    padding: 30px;
+}
+
+.about-div p {
+    color: white;
+    font-size: 1.7em;
+}
+
+.about-div p span {
+    color: #22D3EE;
+    font-weight: 700;
+}
+
+.img-div {
+    border: 2px solid #22D3EE;
+    width: 40%;
+    padding: 20px;
+    text-align: center;
+}
+
+.img-div img {
+    width: 400px;
+}
+
+/* media screen */
+
+@media (max-width:768px) {
+    .about-section {
+        flex-direction: column;
+        gap: 30px;
+        height: 80vh;
+    }
+
+    .img-div {
+        width: 70%;
+    }
+
+    .img-div img {
+        width: 100%;
+    }
+
+    .about-div {
+        width: 80%;
+        height: 40vh;
+    }
+
+    .about-div p {
+        font-size: 1.4em;
+    }
+}
+
+@media (max-width:485px) {
+    .about-section {
+        flex-direction: column;
+        gap: 20px;
+        height: 100vh;
+    }
+
+    .hero-section h4 {
+        font-size: 2em;
+    }
+
+    .img-div {
+        width: 70%;
+    }
+
+    .img-div img {
+        width: 100%;
+    }
+
+    .about-div {
+        width: 90%;
+        height: 60vh;
+    }
+
+    .about-div p {
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width:375px) {
+    .section2 h2 {
+        font-size: 3em;
+    }
+
+    .about-section {
+        height: 80vh;
+    }
+
+    .about-div {
+        padding: 10px;
+    }
+
+    .about-div p {
+        font-size: 1em;
+    }
+}
